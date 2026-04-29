@@ -1,14 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { use, useEffect, useMemo, useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { useSession } from "@/components/auth/use-session";
 import { getItem, isSupabaseEnabled } from "@/lib/data";
 import type { Item } from "@/lib/types";
 import { NoteEditor } from "@/components/item/note-editor";
 
-export default function ItemPage({ params }: { params: { id: string } }) {
+export default function ItemPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = use(params);
   const { user } = useSession();
   const supabaseEnabled = useMemo(() => isSupabaseEnabled(), []);
   const canEdit = supabaseEnabled ? Boolean(user) : true;
@@ -17,11 +18,11 @@ export default function ItemPage({ params }: { params: { id: string } }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    getItem(params.id).then((x) => {
+    getItem(id).then((x) => {
       setItem(x);
       setReady(true);
     });
-  }, [params.id]);
+  }, [id]);
 
   if (!ready) {
     return (
@@ -103,4 +104,3 @@ export default function ItemPage({ params }: { params: { id: string } }) {
     </div>
   );
 }
-

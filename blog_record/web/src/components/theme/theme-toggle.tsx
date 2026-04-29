@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/cn";
 
@@ -19,7 +19,11 @@ function setTheme(theme: Theme) {
 }
 
 export function ThemeToggle({ className }: { className?: string }) {
-  const [theme, setThemeState] = useState<Theme>(() => getEffectiveTheme());
+  const [theme, setThemeState] = useState<Theme>("light");
+
+  useEffect(() => {
+    setThemeState(getEffectiveTheme());
+  }, []);
 
   const Icon = useMemo(() => (theme === "dark" ? Sun : Moon), [theme]);
 

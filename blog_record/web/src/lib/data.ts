@@ -1,9 +1,10 @@
 import type { Item, ItemStatus, ItemType, Visibility } from "@/lib/types";
 import * as local from "@/lib/local-store";
-import { getSupabaseBrowser } from "@/lib/supabase/browser";
 
 export function isSupabaseEnabled() {
-  return Boolean(getSupabaseBrowser());
+  return Boolean(
+    process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  );
 }
 
 export async function listItems(): Promise<Item[]> {
@@ -44,4 +45,3 @@ export async function getNote(itemId: string) {
 export async function upsertNote(itemId: string, content: string) {
   return local.upsertNote(itemId, content);
 }
-

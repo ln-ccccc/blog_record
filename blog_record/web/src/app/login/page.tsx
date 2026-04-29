@@ -5,7 +5,9 @@ import { GitBranch } from "lucide-react";
 import { getSupabaseBrowser } from "@/lib/supabase/browser";
 
 export default function LoginPage() {
-  const enabled = Boolean(getSupabaseBrowser());
+  const enabled = Boolean(
+    process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  );
 
   return (
     <div className="min-h-full bg-background px-4 py-10 text-foreground">
