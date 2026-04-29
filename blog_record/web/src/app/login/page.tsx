@@ -24,9 +24,14 @@ export default function LoginPage() {
           onClick={async () => {
             const supabase = getSupabaseBrowser();
             if (!supabase) return;
+            const apikey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+            if (!apikey) return;
             await supabase.auth.signInWithOAuth({
               provider: "github",
-              options: { redirectTo: `${window.location.origin}/library` },
+              options: {
+                redirectTo: `${window.location.origin}/library`,
+                queryParams: { apikey },
+              },
             });
           }}
         >
