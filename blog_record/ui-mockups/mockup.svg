@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .t{font:600 18px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#111}
+      .s{font:500 13px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#555}
+      .b{font:600 12px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#333}
+      .m{font:500 12px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#777}
+      .cap{font:700 16px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#111}
+      .frame{fill:#fff;stroke:#E6E6E6;stroke-width:2}
+      .shadow{filter:url(#sh)}
+      .chip{fill:#F3F4F6;stroke:#E5E7EB;stroke-width:1}
+      .chipText{font:600 11px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#374151}
+      .card{fill:#fff;stroke:#ECECEC;stroke-width:1.5}
+      .muted{fill:#9CA3AF}
+      .line{stroke:#E5E7EB;stroke-width:1}
+      .btn{fill:#111;rx:10;ry:10}
+      .btnText{font:700 12px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#fff}
+      .pill{fill:#EEF2FF;stroke:#E0E7FF;stroke-width:1}
+      .pillText{font:700 11px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#3730A3}
+      .mono{font:600 11px ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;fill:#4B5563}
+      .dFrame{fill:#0B0F14;stroke:#1F2937;stroke-width:2}
+      .dT{fill:#E5E7EB}
+      .dS{fill:#9CA3AF}
+      .dCard{fill:#0F172A;stroke:#25324A;stroke-width:1.5}
+      .dChip{fill:#111827;stroke:#243244;stroke-width:1}
+      .dChipText{fill:#CBD5E1}
+      .dLine{stroke:#243244;stroke-width:1}
+      .dPill{fill:#172554;stroke:#1E3A8A;stroke-width:1}
+      .dPillText{fill:#BFDBFE}
+      .badge{fill:#ECFDF5;stroke:#D1FAE5;stroke-width:1}
+      .badgeText{font:800 10px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;fill:#065F46}
+      .dBadge{fill:#052E2B;stroke:#064E3B;stroke-width:1}
+      .dBadgeText{fill:#6EE7B7}
+    </style>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect x="20" y="20" width="760" height="410" rx="18" class="frame shadow"/>
+  <text x="44" y="56" class="cap">Library · Light (单列卡片)</text>
+  <rect x="44" y="78" width="56" height="334" rx="16" fill="#FAFAFA" stroke="#EAEAEA" stroke-width="1.5"/>
+  <circle cx="72" cy="110" r="10" fill="#111"/>
+  <circle cx="72" cy="154" r="10" fill="#D1D5DB"/>
+  <circle cx="72" cy="198" r="10" fill="#D1D5DB"/>
+  <circle cx="72" cy="242" r="10" fill="#D1D5DB"/>
+  <rect x="110" y="78" width="650" height="54" rx="14" fill="#FAFAFA" stroke="#EAEAEA" stroke-width="1.5"/>
+  <text x="130" y="111" class="s">Search…</text>
+  <g transform="translate(110,148)">
+    <rect width="64" height="26" rx="13" class="chip"/>
+    <text x="18" y="18" class="chipText">All</text>
+    <rect x="74" width="72" height="26" rx="13" class="chip"/>
+    <text x="92" y="18" class="chipText">Blog</text>
+    <rect x="156" width="78" height="26" rx="13" class="chip"/>
+    <text x="175" y="18" class="chipText">Paper</text>
+    <rect x="244" width="86" height="26" rx="13" class="chip"/>
+    <text x="262" y="18" class="chipText">Unread</text>
+  </g>
+
+  <g transform="translate(110,190)">
+    <rect width="650" height="74" rx="16" class="card"/>
+    <text x="18" y="28" class="t">Understanding Diffusion Transformers</text>
+    <text x="18" y="52" class="s">arXiv · 2026-04-28</text>
+    <rect x="494" y="22" width="64" height="22" rx="11" class="pill"/>
+    <text x="510" y="38" class="pillText">UNREAD</text>
+    <rect x="18" y="56" width="54" height="18" rx="9" class="chip"/>
+    <text x="30" y="69" class="chipText">LLM</text>
+    <rect x="78" y="56" width="70" height="18" rx="9" class="chip"/>
+    <text x="92" y="69" class="chipText">Diffusion</text>
+  </g>
+  <g transform="translate(110,274)">
+    <rect width="650" height="74" rx="16" class="card"/>
+    <text x="18" y="28" class="t">A Practical Guide to RLS in Postgres</text>
+    <text x="18" y="52" class="s">Blog · 2026-04-27</text>
+    <rect x="494" y="22" width="64" height="22" rx="11" class="pill"/>
+    <text x="520" y="38" class="pillText">READ</text>
+    <rect x="18" y="56" width="54" height="18" rx="9" class="chip"/>
+    <text x="30" y="69" class="chipText">DB</text>
+    <rect x="78" y="56" width="62" height="18" rx="9" class="chip"/>
+    <text x="92" y="69" class="chipText">Auth</text>
+  </g>
+  <g transform="translate(110,358)">
+    <rect width="650" height="54" rx="16" class="card"/>
+    <text x="18" y="34" class="s">…更多条目</text>
+  </g>
+
+  <rect x="820" y="20" width="760" height="410" rx="18" class="dFrame shadow"/>
+  <text x="844" y="56" class="cap dT">Library · Dark (单列卡片)</text>
+  <rect x="844" y="78" width="56" height="334" rx="16" fill="#0B1220" stroke="#1F2A3A" stroke-width="1.5"/>
+  <circle cx="872" cy="110" r="10" fill="#E5E7EB"/>
+  <circle cx="872" cy="154" r="10" fill="#334155"/>
+  <circle cx="872" cy="198" r="10" fill="#334155"/>
+  <circle cx="872" cy="242" r="10" fill="#334155"/>
+  <rect x="910" y="78" width="650" height="54" rx="14" fill="#0B1220" stroke="#1F2A3A" stroke-width="1.5"/>
+  <text x="930" y="111" class="s dS">Search…</text>
+  <g transform="translate(910,148)">
+    <rect width="64" height="26" rx="13" class="dChip"/>
+    <text x="18" y="18" class="chipText dChipText">All</text>
+    <rect x="74" width="72" height="26" rx="13" class="dChip"/>
+    <text x="92" y="18" class="chipText dChipText">Blog</text>
+    <rect x="156" width="78" height="26" rx="13" class="dChip"/>
+    <text x="175" y="18" class="chipText dChipText">Paper</text>
+    <rect x="244" width="86" height="26" rx="13" class="dChip"/>
+    <text x="262" y="18" class="chipText dChipText">Unread</text>
+  </g>
+  <g transform="translate(910,190)">
+    <rect width="650" height="74" rx="16" class="dCard"/>
+    <text x="18" y="28" class="t dT">Understanding Diffusion Transformers</text>
+    <text x="18" y="52" class="s dS">arXiv · 2026-04-28</text>
+    <rect x="494" y="22" width="64" height="22" rx="11" class="dPill"/>
+    <text x="510" y="38" class="pillText dPillText">UNREAD</text>
+    <rect x="18" y="56" width="54" height="18" rx="9" class="dChip"/>
+    <text x="30" y="69" class="chipText dChipText">LLM</text>
+    <rect x="78" y="56" width="70" height="18" rx="9" class="dChip"/>
+    <text x="92" y="69" class="chipText dChipText">Diffusion</text>
+  </g>
+  <g transform="translate(910,274)">
+    <rect width="650" height="74" rx="16" class="dCard"/>
+    <text x="18" y="28" class="t dT">A Practical Guide to RLS in Postgres</text>
+    <text x="18" y="52" class="s dS">Blog · 2026-04-27</text>
+    <rect x="494" y="22" width="64" height="22" rx="11" class="dPill"/>
+    <text x="520" y="38" class="pillText dPillText">READ</text>
+    <rect x="18" y="56" width="54" height="18" rx="9" class="dChip"/>
+    <text x="30" y="69" class="chipText dChipText">DB</text>
+    <rect x="78" y="56" width="62" height="18" rx="9" class="dChip"/>
+    <text x="92" y="69" class="chipText dChipText">Auth</text>
+  </g>
+
+  <rect x="20" y="460" width="760" height="420" rx="18" class="frame shadow"/>
+  <text x="44" y="496" class="cap">Commits · Light (轻量日志)</text>
+  <rect x="44" y="516" width="56" height="344" rx="16" fill="#FAFAFA" stroke="#EAEAEA" stroke-width="1.5"/>
+  <circle cx="72" cy="548" r="10" fill="#D1D5DB"/>
+  <circle cx="72" cy="592" r="10" fill="#111"/>
+  <circle cx="72" cy="636" r="10" fill="#D1D5DB"/>
+  <circle cx="72" cy="680" r="10" fill="#D1D5DB"/>
+  <text x="110" y="528" class="s">2026-04-28</text>
+  <line x1="110" y1="542" x2="736" y2="542" class="line"/>
+  <g transform="translate(110,556)">
+    <circle cx="10" cy="10" r="6" fill="#111"/>
+    <text x="28" y="14" class="mono">Paper: Understanding Diffusion Transformers</text>
+    <rect x="520" y="0" width="52" height="20" rx="10" class="badge"/>
+    <text x="533" y="14" class="badgeText">PAPER</text>
+    <text x="660" y="14" class="m">09:12</text>
+  </g>
+  <g transform="translate(110,586)">
+    <circle cx="10" cy="10" r="6" fill="#111"/>
+    <text x="28" y="14" class="mono">Blog: A Practical Guide to RLS in Postgres</text>
+    <rect x="520" y="0" width="48" height="20" rx="10" class="badge"/>
+    <text x="534" y="14" class="badgeText">BLOG</text>
+    <text x="660" y="14" class="m">09:06</text>
+  </g>
+  <text x="110" y="640" class="s">2026-04-27</text>
+  <line x1="110" y1="654" x2="736" y2="654" class="line"/>
+  <g transform="translate(110,668)">
+    <circle cx="10" cy="10" r="6" fill="#111"/>
+    <text x="28" y="14" class="mono">Blog: RLHF Notes (Week 17)</text>
+    <rect x="520" y="0" width="48" height="20" rx="10" class="badge"/>
+    <text x="534" y="14" class="badgeText">BLOG</text>
+    <text x="660" y="14" class="m">21:41</text>
+  </g>
+
+  <rect x="820" y="460" width="760" height="420" rx="18" class="frame shadow"/>
+  <text x="844" y="496" class="cap">Item · Reading + Notes</text>
+  <rect x="844" y="516" width="56" height="344" rx="16" fill="#FAFAFA" stroke="#EAEAEA" stroke-width="1.5"/>
+  <circle cx="872" cy="548" r="10" fill="#111"/>
+  <circle cx="872" cy="592" r="10" fill="#D1D5DB"/>
+  <circle cx="872" cy="636" r="10" fill="#D1D5DB"/>
+  <circle cx="872" cy="680" r="10" fill="#D1D5DB"/>
+  <rect x="910" y="516" width="650" height="44" rx="14" fill="#FAFAFA" stroke="#EAEAEA" stroke-width="1.5"/>
+  <text x="928" y="544" class="b">Understanding Diffusion Transformers</text>
+  <rect x="1440" y="526" width="104" height="26" class="btn"/>
+  <text x="1458" y="543" class="btnText">Open Original</text>
+
+  <rect x="910" y="574" width="416" height="286" rx="16" fill="#FFFFFF" stroke="#ECECEC" stroke-width="1.5"/>
+  <text x="930" y="604" class="b">Snapshot Reader</text>
+  <line x1="930" y1="618" x2="1306" y2="618" class="line"/>
+  <rect x="930" y="636" width="320" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="930" y="656" width="372" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="930" y="676" width="348" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="930" y="706" width="280" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="930" y="726" width="390" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="930" y="756" width="340" height="12" rx="6" fill="#E5E7EB"/>
+  <rect x="930" y="776" width="372" height="12" rx="6" fill="#E5E7EB"/>
+
+  <rect x="1338" y="574" width="222" height="286" rx="16" fill="#FFFFFF" stroke="#ECECEC" stroke-width="1.5"/>
+  <text x="1358" y="604" class="b">Notes</text>
+  <line x1="1358" y1="618" x2="1540" y2="618" class="line"/>
+  <text x="1358" y="646" class="s">Summary</text>
+  <rect x="1358" y="656" width="180" height="10" rx="5" fill="#E5E7EB"/>
+  <rect x="1358" y="674" width="200" height="10" rx="5" fill="#E5E7EB"/>
+  <text x="1358" y="708" class="s">Key ideas</text>
+  <rect x="1358" y="718" width="190" height="10" rx="5" fill="#E5E7EB"/>
+  <rect x="1358" y="736" width="170" height="10" rx="5" fill="#E5E7EB"/>
+  <text x="1358" y="770" class="s">Questions</text>
+  <rect x="1358" y="780" width="196" height="10" rx="5" fill="#E5E7EB"/>
+</svg>
